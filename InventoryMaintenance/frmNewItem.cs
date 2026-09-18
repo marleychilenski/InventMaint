@@ -6,53 +6,71 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-using System;
-using System.Windows.Forms;
-
 namespace InventoryMaintenance
 {
     public partial class frmNewItem : Form
     {
-        // Marley Chilenski
-        // Stores the new InvItem created by the user.
-        // It starts as null if the user cancels.
-        private InvItem invItem = null;
-
-        // Marley Chilenski
-        // Initializes the New Item form.
         public frmNewItem()
         {
             InitializeComponent();
         }
 
-        // Marley Chilenski
-        // Displays the New Item form as a dialog box
-        // and returns the new InvItem created by the user.
+        private InvItem invItem = null;
+
         public InvItem GetNewItem()
         {
+            LoadComboBox();
             this.ShowDialog();
             return invItem;
         }
 
+        private void LoadComboBox()
+        {
+            cboSizeOrManufacturer.Items.Clear();
+            if (rdoPlant.Checked)
+            {
+                cboSizeOrManufacturer.Items.Add("1 gallon");
+                cboSizeOrManufacturer.Items.Add("5 gallon");
+                cboSizeOrManufacturer.Items.Add("15 gallon");
+                cboSizeOrManufacturer.Items.Add("24-inch box");
+                cboSizeOrManufacturer.Items.Add("36-inch box");
+            }
+            else
+            {
+                cboSizeOrManufacturer.Items.Add("Bayer");
+                cboSizeOrManufacturer.Items.Add("Jobe's");
+                cboSizeOrManufacturer.Items.Add("Ortho");
+                cboSizeOrManufacturer.Items.Add("Roundup");
+                cboSizeOrManufacturer.Items.Add("Scotts");
+            }
+        }
+
         // Marley Chilenski
-        // Creates a new InvItem using the values entered
-        // in the text boxes and closes the form if valid.
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (IsValidData())
             {
-                int itemNo = Convert.ToInt32(txtItemNo.Text);
-                string description = txtDescription.Text;
-                decimal price = Convert.ToDecimal(txtPrice.Text);
-
-                invItem = new InvItem(itemNo, description, price);
+                if (rdoPlant.Checked)
+                {
+                    invItem = new Plant(
+                        Convert.ToInt32(txtItemNo.Text),
+                        txtDescription.Text,
+                        Convert.ToDecimal(txtPrice.Text),
+                        cboSizeOrManufacturer.Text);
+                }
+                else
+                {
+                    invItem = new Supply(
+                        Convert.ToInt32(txtItemNo.Text),
+                        txtDescription.Text,
+                        Convert.ToDecimal(txtPrice.Text),
+                        cboSizeOrManufacturer.Text);
+                }
 
                 this.Close();
             }
         }
 
-        // Marley Chilenski
-        // Checks whether all required text boxes contain valid data.
         private bool IsValidData()
         {
             return Validator.IsPresent(txtItemNo) &&
@@ -62,11 +80,27 @@ namespace InventoryMaintenance
                    Validator.IsDecimal(txtPrice);
         }
 
-        // Marley Chilenski
-        // Closes the form without creating a new item.
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void rdoPlant_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoPlant.Checked)
+            {
+                lblSizeOrManufacturer.Text = "Size:";
+            }
+            else
+            {
+                lblSizeOrManufacturer.Text = "Manufacturer:";
+            }
+            LoadComboBox();
+        }
+
+        private void rdoSupply_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
