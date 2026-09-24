@@ -39,8 +39,6 @@ namespace InventoryMaintenance
             }
         }
 
-        //public InvItem GetItemByIndex(int i) => invItems[i];
-
         public void Add(InvItem invItem)
         {
             invItems.Add(invItem);

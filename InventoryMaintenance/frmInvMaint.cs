@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace InventoryMaintenance
 
         private InvItemList invItems = new InvItemList();
 
+        //Marley Chilenski
         private void frmInvMaint_Load(object sender, EventArgs e)
         {
             invItems.Changed += new InvItemList.ChangeHandler(HandleChange);
@@ -36,17 +38,21 @@ namespace InventoryMaintenance
                 lstItems.Items.Add(item.GetDisplayText());
             }
         }
-
+        //Marley Chilenski
         private void btnAdd_Click(object sender, EventArgs e)
         {
             frmNewItem newItemForm = new frmNewItem();
             InvItem invItem = newItemForm.GetNewItem();
+            Debug.WriteLine($"Item type: {invItem.GetType()}");
+            Debug.WriteLine($"Item is InvItem: {invItem is InvItem}");
+            Debug.WriteLine($"Item is IDisplayable: {invItem is IDisplayable}");
             if (invItem != null)
             {
                 invItems += invItem;
             }
         }
 
+        //Marley Chilenski
         private void btnDelete_Click(object sender, EventArgs e)
         {
             int i = lstItems.SelectedIndex;

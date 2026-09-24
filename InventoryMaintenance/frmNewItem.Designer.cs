@@ -28,175 +28,174 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            txtItemNo = new TextBox();
-            label2 = new Label();
-            txtDescription = new TextBox();
-            label3 = new Label();
-            txtPrice = new TextBox();
-            btnSave = new Button();
-            btnCancel = new Button();
-            cboSizeOrManufacturer = new ComboBox();
-            lblSizeOrManufacturer = new Label();
-            rdoPlant = new RadioButton();
-            rdoSupply = new RadioButton();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtItemNo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.cboSizeOrManufacturer = new System.Windows.Forms.ComboBox();
+            this.lblSizeOrManufacturer = new System.Windows.Forms.Label();
+            this.rdoPlant = new System.Windows.Forms.RadioButton();
+            this.rdoSupply = new System.Windows.Forms.RadioButton();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(18, 49);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(51, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Item no:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 49);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Item no:";
             // 
             // txtItemNo
             // 
-            txtItemNo.Location = new Point(108, 47);
-            txtItemNo.Margin = new Padding(2);
-            txtItemNo.Name = "txtItemNo";
-            txtItemNo.Size = new Size(106, 23);
-            txtItemNo.TabIndex = 3;
-            txtItemNo.Tag = "Item no";
+            this.txtItemNo.Location = new System.Drawing.Point(108, 47);
+            this.txtItemNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtItemNo.Name = "txtItemNo";
+            this.txtItemNo.Size = new System.Drawing.Size(106, 23);
+            this.txtItemNo.TabIndex = 3;
+            this.txtItemNo.Tag = "Item no";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(18, 78);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Description:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Description:";
             // 
             // txtDescription
             // 
-            txtDescription.Location = new Point(108, 76);
-            txtDescription.Margin = new Padding(2);
-            txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(190, 23);
-            txtDescription.TabIndex = 5;
-            txtDescription.Tag = "Description";
+            this.txtDescription.Location = new System.Drawing.Point(108, 76);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(190, 23);
+            this.txtDescription.TabIndex = 5;
+            this.txtDescription.Tag = "Description";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(18, 138);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(36, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Price:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 138);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Price:";
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(108, 136);
-            txtPrice.Margin = new Padding(2);
-            txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(106, 23);
-            txtPrice.TabIndex = 9;
-            txtPrice.Tag = "Price";
+            this.txtPrice.Location = new System.Drawing.Point(108, 136);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(106, 23);
+            this.txtPrice.TabIndex = 9;
+            this.txtPrice.Tag = "Price";
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(108, 180);
-            btnSave.Margin = new Padding(2);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(78, 25);
-            btnSave.TabIndex = 10;
-            btnSave.Text = "Save";
-            btnSave.UseVisualStyleBackColor = true;
-            btnSave.Click += btnSave_Click;
+            this.btnSave.Location = new System.Drawing.Point(108, 180);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(78, 25);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(219, 180);
-            btnCancel.Margin = new Padding(2);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(78, 25);
-            btnCancel.TabIndex = 11;
-            btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += btnCancel_Click;
+            this.btnCancel.Location = new System.Drawing.Point(219, 180);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(78, 25);
+            this.btnCancel.TabIndex = 11;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // cboSizeOrManufacturer
             // 
-            cboSizeOrManufacturer.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboSizeOrManufacturer.FormattingEnabled = true;
-            cboSizeOrManufacturer.Location = new Point(108, 106);
-            cboSizeOrManufacturer.Margin = new Padding(2);
-            cboSizeOrManufacturer.Name = "cboSizeOrManufacturer";
-            cboSizeOrManufacturer.Size = new Size(129, 23);
-            cboSizeOrManufacturer.TabIndex = 7;
+            this.cboSizeOrManufacturer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSizeOrManufacturer.FormattingEnabled = true;
+            this.cboSizeOrManufacturer.Location = new System.Drawing.Point(108, 106);
+            this.cboSizeOrManufacturer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboSizeOrManufacturer.Name = "cboSizeOrManufacturer";
+            this.cboSizeOrManufacturer.Size = new System.Drawing.Size(129, 23);
+            this.cboSizeOrManufacturer.TabIndex = 7;
             // 
             // lblSizeOrManufacturer
             // 
-            lblSizeOrManufacturer.AutoSize = true;
-            lblSizeOrManufacturer.Location = new Point(18, 107);
-            lblSizeOrManufacturer.Margin = new Padding(2, 0, 2, 0);
-            lblSizeOrManufacturer.Name = "lblSizeOrManufacturer";
-            lblSizeOrManufacturer.Size = new Size(30, 15);
-            lblSizeOrManufacturer.TabIndex = 9;
-            lblSizeOrManufacturer.Text = "Size:";
+            this.lblSizeOrManufacturer.AutoSize = true;
+            this.lblSizeOrManufacturer.Location = new System.Drawing.Point(18, 107);
+            this.lblSizeOrManufacturer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSizeOrManufacturer.Name = "lblSizeOrManufacturer";
+            this.lblSizeOrManufacturer.Size = new System.Drawing.Size(30, 15);
+            this.lblSizeOrManufacturer.TabIndex = 9;
+            this.lblSizeOrManufacturer.Text = "Size:";
             // 
             // rdoPlant
             // 
-            rdoPlant.AutoSize = true;
-            rdoPlant.Checked = true;
-            rdoPlant.Location = new Point(108, 14);
-            rdoPlant.Margin = new Padding(2);
-            rdoPlant.Name = "rdoPlant";
-            rdoPlant.Size = new Size(52, 19);
-            rdoPlant.TabIndex = 0;
-            rdoPlant.TabStop = true;
-            rdoPlant.Text = "Plant";
-            rdoPlant.UseVisualStyleBackColor = true;
-            rdoPlant.CheckedChanged += rdoPlant_CheckedChanged;
+            this.rdoPlant.AutoSize = true;
+            this.rdoPlant.Checked = true;
+            this.rdoPlant.Location = new System.Drawing.Point(108, 14);
+            this.rdoPlant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoPlant.Name = "rdoPlant";
+            this.rdoPlant.Size = new System.Drawing.Size(52, 19);
+            this.rdoPlant.TabIndex = 0;
+            this.rdoPlant.TabStop = true;
+            this.rdoPlant.Text = "Plant";
+            this.rdoPlant.UseVisualStyleBackColor = true;
+            this.rdoPlant.CheckedChanged += new System.EventHandler(this.rdoPlant_CheckedChanged);
             // 
             // rdoSupply
             // 
-            rdoSupply.AutoSize = true;
-            rdoSupply.Location = new Point(192, 14);
-            rdoSupply.Margin = new Padding(2);
-            rdoSupply.Name = "rdoSupply";
-            rdoSupply.Size = new Size(61, 19);
-            rdoSupply.TabIndex = 1;
-            rdoSupply.TabStop = true;
-            rdoSupply.Text = "Supply";
-            rdoSupply.UseVisualStyleBackColor = true;
-            rdoSupply.CheckedChanged += rdoSupply_CheckedChanged;
+            this.rdoSupply.AutoSize = true;
+            this.rdoSupply.Location = new System.Drawing.Point(192, 14);
+            this.rdoSupply.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoSupply.Name = "rdoSupply";
+            this.rdoSupply.Size = new System.Drawing.Size(61, 19);
+            this.rdoSupply.TabIndex = 1;
+            this.rdoSupply.TabStop = true;
+            this.rdoSupply.Text = "Supply";
+            this.rdoSupply.UseVisualStyleBackColor = true;
             // 
             // frmNewItem
             // 
-            AcceptButton = btnSave;
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            CancelButton = btnCancel;
-            ClientSize = new Size(317, 217);
-            ControlBox = false;
-            Controls.Add(rdoSupply);
-            Controls.Add(rdoPlant);
-            Controls.Add(lblSizeOrManufacturer);
-            Controls.Add(cboSizeOrManufacturer);
-            Controls.Add(btnCancel);
-            Controls.Add(btnSave);
-            Controls.Add(txtPrice);
-            Controls.Add(label3);
-            Controls.Add(txtDescription);
-            Controls.Add(label2);
-            Controls.Add(txtItemNo);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(2);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "frmNewItem";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "New Inventory Item";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AcceptButton = this.btnSave;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancel;
+            this.ClientSize = new System.Drawing.Size(317, 217);
+            this.ControlBox = false;
+            this.Controls.Add(this.rdoSupply);
+            this.Controls.Add(this.rdoPlant);
+            this.Controls.Add(this.lblSizeOrManufacturer);
+            this.Controls.Add(this.cboSizeOrManufacturer);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtItemNo);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmNewItem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "New Inventory Item";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

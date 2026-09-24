@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InventoryMaintenance
 {
-    public class InvItem
+    public class InvItem : IDisplayable
     {
         public InvItem() { } 
 

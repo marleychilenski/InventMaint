@@ -15,6 +15,13 @@
         <Size>1 gallon</Size>
     </Item>
     <Item>
+        <Type>Supply</Type>
+        <ItemNo>9210584</ItemNo>
+        <Description>Snail pellets</Description>
+        <Price>12.95</Price>
+        <Manufacturer>Ortho</Manufacturer>
+    </Item>
+    <Item>
         <Type>Plant</Type>
         <ItemNo>4738459</ItemNo>
         <Description>Japanese Red Maple</Description>

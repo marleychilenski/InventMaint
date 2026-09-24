@@ -45,7 +45,6 @@ namespace InventoryMaintenance
             }
         }
 
-        // Marley Chilenski
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (IsValidData())
@@ -54,19 +53,20 @@ namespace InventoryMaintenance
                 {
                     invItem = new Plant(
                         Convert.ToInt32(txtItemNo.Text),
-                        txtDescription.Text,
-                        Convert.ToDecimal(txtPrice.Text),
-                        cboSizeOrManufacturer.Text);
+                        txtDescription.Text, 
+                        Convert.ToDecimal(txtPrice.Text), 
+                        cboSizeOrManufacturer.SelectedItem.ToString()
+                    );
                 }
                 else
                 {
                     invItem = new Supply(
                         Convert.ToInt32(txtItemNo.Text),
-                        txtDescription.Text,
-                        Convert.ToDecimal(txtPrice.Text),
-                        cboSizeOrManufacturer.Text);
+                        txtDescription.Text, 
+                        Convert.ToDecimal(txtPrice.Text), 
+                        cboSizeOrManufacturer.SelectedItem.ToString()
+                    );
                 }
-
                 this.Close();
             }
         }
@@ -96,11 +96,6 @@ namespace InventoryMaintenance
                 lblSizeOrManufacturer.Text = "Manufacturer:";
             }
             LoadComboBox();
-        }
-
-        private void rdoSupply_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

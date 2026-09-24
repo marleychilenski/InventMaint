@@ -90,7 +90,7 @@
             Margin = new Padding(2);
             Name = "frmInvMaint";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Marley Chilenski's Inventory Maintenance Application";
+            Text = "Marley Chilenski's Inventory Maintenance";
             Load += frmInvMaint_Load;
             ResumeLayout(false);
 

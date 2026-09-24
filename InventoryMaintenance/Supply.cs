@@ -1,30 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace InventoryMaintenance
 {
     public class Supply : InvItem
     {
-        public string Manufacturer { get; set; }
+        public Supply() { }
 
-        // Marley Chilenski
-        public Supply()
-        {
-            Manufacturer = "";
-        }
-        // Marley Chilenski
-        public Supply(int itemNo, string description, decimal price, string manufacturer)
-            : base(itemNo, description, price)
+        public Supply(int itemNo, string description, decimal price, string manufacturer) :
+            base(itemNo, description, price)
         {
             Manufacturer = manufacturer;
         }
-        // Marley Chilenski
-        public override string GetDisplayText()
-        {
-            return ItemNo + " " + Manufacturer + " " + Description + " ($" + Price + ")";
-        }
+
+        public string Manufacturer { get; set; }
+
+        public override string GetDisplayText() =>
+            $"{ItemNo}    {Manufacturer} {Description} ({Price:c})";
     }
 }
